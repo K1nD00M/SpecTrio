@@ -1,0 +1,25 @@
+.NavItem {
+   height: 55px;
+   width: 55px;
+
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+   backdrop-filter: blur(25px);
+   border-radius: 10px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   cursor: pointer;
+}
+
+.item {
+   color: rgba(255, 255, 255, 0.8);
+   width: 28px;
+   height: 28px;  
+
+   &:hover {
+      color: var(--primary-color);
+   }
+
+}

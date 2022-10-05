@@ -1,0 +1,17 @@
+@import "reset";
+@import "./variables/global";
+
+.app {
+   font: var(--font-l);
+   font-size: var(--font-size-l);
+
+   background: var(--bg-color);
+   color: var(--primary-color);
+
+   min-height: 100vh;
+   background: radial-gradient(100% 428.36% at 0% 0%, #07151B 0%, #24062A 100%);
+}
+
+.wrapper {
+   flex-grow: 1;
+}
