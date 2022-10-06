@@ -1,0 +1,33 @@
+.FriendsList {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   cursor: pointer;
+
+   &:hover {
+      background: #0a121c;
+   }
+}
+
+.blockName {
+   display: flex;
+   align-items: center;
+}
+
+.img {
+   width: 42px;
+   height: 42px;
+   margin-right: 8px;
+}
+
+.span {
+   font-size: 2rem;
+   letter-spacing: 3px;
+}
+
+.coin {
+   font-size: 1.8rem;
+   letter-spacing: 3px;
+   padding-right: 10px;
+   color: var(--primary-color);
+}

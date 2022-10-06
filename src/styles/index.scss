@@ -2,6 +2,8 @@
 @import "./variables/global";
 
 .app {
+   display: flex;
+
    font: var(--font-l);
    font-size: var(--font-size-l);
 
@@ -13,5 +15,7 @@
 }
 
 .wrapper {
+   color: var(--color);
    flex-grow: 1;
+   padding: 50px 0 0 50px;
 }

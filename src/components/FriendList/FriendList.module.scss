@@ -1,0 +1,38 @@
+.FriendList {
+   display: flex;
+   flex-direction: column;
+   max-height: 80vh;
+   width: 30%;
+   padding: 20px 15px;
+   background: var(--bg-color);
+
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+   backdrop-filter: blur(25px);
+   border-radius: 10px;
+}
+
+.span {
+   opacity: 0.4;
+   margin-bottom: 25px;
+}
+
+.list {
+   flex-grow: 1;
+   padding-right: 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   overflow-y: scroll;
+   scrollbar-color: var(--primary-color) #fff0;
+}
+
+.filter {
+   margin-top: 55px;
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+.filterUsers {
+   font-size: 1.2rem;
+   opacity: 0.5;
+} 
