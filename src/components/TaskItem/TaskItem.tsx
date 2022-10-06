@@ -31,30 +31,30 @@ export const TaskItem = (props: TaskItemProps) => {
    return (
       
       <div className={classNames(cls.TaskItem, {}, [className])}>
-         <span>
+         <span className={cls.name}>
             {name}
          </span>
 
          {date > 4
-            ? <span className={cls.medium}>{date + ' дней'}</span>
+            ? <span className={classNames(cls.medium, {}, [cls.date])}>{date + ' дней'}</span>
             : date > 1
-            ? <span className={cls.high}>{date + ' дня'}</span>
-            : <span className={cls.urgent}>{'1 день'}</span>
+            ? <span className={classNames(cls.high, {}, [cls.date])}>{date + ' дня'}</span>
+            : <span className={classNames(cls.urgent, {}, [cls.date])}>{'1 день'}</span>
          } 
 
-         <div>
+         <div className={cls.taskInformation}>
             {
                priority === 'urgent'
                   ? <p className={classNames(cls.urgent, {}, [cls.priority])}>Срочный</p>
                   : priority === 'high'
                   ?  <p className={classNames(cls.high, {}, [cls.priority])}>Высокий</p>
                   : priority === 'medium'
-                  ?  <p className={classNames(cls.high, {}, [cls.priority])}>Средний</p>
+                  ?  <p className={classNames(cls.medium, {}, [cls.priority])}>Средний</p>
                   :  <p className={cls.priority}>Низкий</p>
             }
             {isSolo
-               ? <p className={cls.solo}>Индивидуальный</p> 
-               : <p className={cls.solo}>Общий</p>
+               ? <span className={cls.solo}>Индивидуальный</span> 
+               : <span className={cls.solo}>Общий</span>
             }
          </div>
          <div className={cls.coin}>

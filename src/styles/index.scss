@@ -12,10 +12,18 @@
 
    min-height: 100vh;
    background: radial-gradient(100% 428.36% at 0% 0%, #07151B 0%, #24062A 100%);
+
+   @media(max-width: 992px) {
+      flex-direction: column;
+   }
 }
 
 .wrapper {
    color: var(--color);
    flex-grow: 1;
    padding: 50px 0 0 50px;
+
+   @media(max-width: 992px) {
+      padding-left: 0px;
+   }
 }
