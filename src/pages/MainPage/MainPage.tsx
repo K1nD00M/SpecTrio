@@ -1,3 +1,4 @@
+import { Login } from 'components/Login/Login';
 import { classNames } from 'lib';
 import cls from './MainPage.module.scss';
 
@@ -8,7 +9,7 @@ interface MainPageProps {
 export const MainPage = ({className}: MainPageProps) => {
    return (
       <div className={classNames(cls.MainPage, {}, [className])}>
-         123
+         <Login />
       </div>
    )
 }

@@ -13,12 +13,12 @@ export const WorkPage = ({className}: WorkPageProps) => {
       <div className={classNames(cls.WorkPage, {}, [className])}>
          <Container fluid={true}>
             <Row >
-               <Col lg={4} >
-                  <FriendList />
-               </Col>
                <Col lg={1}></Col>
                <Col lg={7}>
                   <TaskList />
+               </Col>
+               <Col lg={{span: 4, order: 'first'}} >
+                  <FriendList />
                </Col>
             </Row>
          </Container>
